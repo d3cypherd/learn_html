@@ -53,5 +53,51 @@
     <hr />
     <h1>Assets</h1>
     <img src="img/html.jfif" alt="html logo" />
+    <hr />
+
+    <h1>HTML Forms</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+      <br /><br />
+      <label for="password">Password&nbsp;</label>
+      <input type="password" id="password" required />
+      <br /><br />
+      <!--Input Types-->
+      <!--Radio: User can only choose 1 option **(for unique name field inputs)**-->
+      <input type="radio" name="gender" value="male" /> Male<br />
+      <input type="radio" name="gender" value="female" /> Female<br />
+      <input type="radio" name="gender" value="pfnts" /> Prefer not to say<br />
+      <br />
+      <!--Checkbox: User can choose multiple options-->
+      <input type="checkbox" name="interests" value="programming" />
+      Programming<br />
+      <input type="checkbox" name="interests" value="ai" /> Artificial
+      Intelligence<br />
+      <input type="checkbox" name="interests" value="security" /> Security<br />
+      <br />
+      <!--Select List Input-->
+      <label for="security question">Security Question: </label>
+      <select id="select" name="security question">
+        <option value="q1">
+          What was your age when you got your 1st mobile phone?
+        </option>
+        <option value="q2">What is your favourite city?</option>
+      </select>
+      <br /><br />
+      <label for="security answer">Security Answer:</label>
+      <input type="text" id="security answer" />
+      <br /><br />
+      <label for="bio">Bio:</label><br />
+      <textarea
+        name="bio"
+        id="bio"
+        rows="10"
+        cols="40"
+        placeholder="tell us your story..."
+      ></textarea>
+      <br />
+      <input type="submit" value="Submit form" />
+    </form>
   </body>
 </html>
